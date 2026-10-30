@@ -1,4 +1,4 @@
-package o1.adventure.game
+package game
 
 class NPC(val name: String, val dialogue: String):
   def matches(inputName: String): Boolean = 

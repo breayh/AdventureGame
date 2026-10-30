@@ -1,4 +1,4 @@
-package o1.adventure.game
+package game
 
 class Item(val name: String, val description: String):
 

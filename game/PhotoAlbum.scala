@@ -1,6 +1,4 @@
-package o1.adventure.game
-
-import o1.adventure.game.Photo
+package game
 
 import scala.collection.mutable.Map
 

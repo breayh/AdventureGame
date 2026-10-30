@@ -1,6 +1,4 @@
-package o1.adventure.game
-
-import o1.adventure.game.Item
+package game
 import o1.gui.Pic
 import o1.show
 

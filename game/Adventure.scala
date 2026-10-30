@@ -1,7 +1,5 @@
-package o1.adventure.game
-
-import o1.adventure.game.Action
-import o1.gui.*
+package game
+//import o1.gui.*
 
 import scala.collection.mutable.Map
 import scala.io.StdIn.readLine
