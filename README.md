@@ -23,6 +23,6 @@ Players interact with the environment using a simple command format. Type _go [p
 
 The application is written in Scala using sbt as its primary build tool. The underlying architecture applies functional programming principles, including state objects to track game updates, pattern matching to interpret player commands, and clean rendering loops.
 
-## Project Structure
+# Project Structure
 - `game` - Full game code content.
 - `photos` - Visuals that are presented during the gameplay.
