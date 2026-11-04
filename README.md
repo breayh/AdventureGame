@@ -1,28 +1,52 @@
-# A Night Market Adventure - text game project
-A school text-based adventure game project built in Scala. Players must navigate a market, talk to characters, and gather key items to find a way out before time runs out.
+# A Night Market Adventure
 
-# Game Description
+A text-based adventure game written in Scala as a university course project. You find yourself in a busy night market and need to find a way out by exploring stalls, talking to vendors, and collecting the right items before time runs out.
 
-The project features terminal command gameplay and visuals, incorporating text layouts, defined commands, and great gameplay script to bring all  market stalls to life. The interactive command system utilizes a text-parsing engine that supports natural player inputs like examining items, talking to characters, picking up or dropping objects, and navigating the map. Item and inventory management form a central mechanic, requiring players to visit stalls, manage their inventory, and make good use of these goods. Underneath, the game relies on a functional Scala architecture using various state representations, pattern matching, and functional game loops. Players need to find an escape routes and a combination of key items and vendor favors they need to pursue.
+> **Note:** This game was built on top of a university course assignment. The course-provided starter code and the game's source code are not included in this repository. This page covers the game itself and my part in making it.
 
-# Authors
+## About the game
 
-This project was developed collaboratively by a two-person team with distinct responsibilities. My responsibility was to serve as the programmer, driving the technical execution of the project. This included me developing the game loop, modifying the command parser, and designing the data structures for the inventory and item mechanics. My partner acted as the designer, creating the market setting, scripting the dialogue trees and quest flows, and crafting all the visuals and room layouts.
+The game is played by typing commands into a graphical window that shows your current location, the events of each turn, and a turn counter. The market is made up of stalls, each with its own vendors, items, and requests. Progress depends on exploring carefully, managing your inventory, and helping vendors by giving them items or making the right dialogue choices.
 
-# How to play
+The goal is to find and collect **6 photos**, which together unlock the main escape route.
 
-## Overview
+## Screenshots
 
-To escape the market, players explore different stalls and interact with local vendors. The ultimate goal is to discover and acquire 6 photos  required to unlock the main escape route. Progression requires smart inventory management, careful exploration, and resolving vendor requests through item usage or dialog choices.
+<img width="1000" height="700" alt="image" src="https://github.com/user-attachments/assets/0e3b472d-9cc0-452b-af05-1ac0ebd68762" />
 
-## Commands
+<img width="1002" height="702" alt="image" src="https://github.com/user-attachments/assets/eb53b5ab-a7d6-469e-92b0-b3e082ec1a82" />
 
-Players interact with the environment using a simple command format. Type _go [place]_ to change the current location or _talk [character]_ to converse with character at a current location. To interact with objects, players can use _examine [item]_ for  item or photo details, _get [item]_ to pick up objects, or _drop [item]_ to leave an item at the current location. Other commands include _help_ to inspect possible actions to perform or _status_ to check current game status.
+<img width="1006" height="779" alt="image" src="https://github.com/user-attachments/assets/af17e399-aaba-4202-a282-2be88cfe5d33" />
 
-## Code details
 
-The application is written in Scala using sbt as its primary build tool. The underlying architecture applies functional programming principles, including state objects to track game updates, pattern matching to interpret player commands, and clean rendering loops.
+## How to play
 
-# Project Structure
-- `game` - Full game code content.
-- `photos` - Visuals that are presented during the gameplay.
+| Command | What it does |
+|---|---|
+| `go [place]` | Move to another location |
+| `talk [character]` | Talk to a character at your current location |
+| `examine [item]` | See details about an item or photo |
+| `get [item]` | Pick up an item |
+| `drop [item]` | Leave an item at your current location |
+| `status` | Check the current state of the game |
+| `help` | List the available commands |
+| `quit` | Quit the game |
+| `inventory` | Check the current state of your inventory |
+| `view [photo]` | View a photo |
+
+## My role
+
+This was a two-person project with split responsibilities.
+
+- **Me (programmer):** I worked on the game loop, extended the command parser, and designed the data structures for items and the inventory.
+- **My partner (designer):** They created the market setting, wrote the dialogue and quest flow, and designed the visuals and room layouts.
+
+## Technical notes
+
+- Language: Scala 3
+- Build tool: sbt
+- Interface: Scala Swing GUI
+
+## Repository contents
+
+- `photos/`: screenshots and visuals from the game
