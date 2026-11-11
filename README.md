@@ -2,8 +2,6 @@
 
 A text-based adventure game written in Scala as a university course project. You find yourself in a busy night market and need to find a way out by exploring stalls, talking to vendors, and collecting the right items before time runs out.
 
-> **Note:** This game was built on top of a university course assignment. The course-provided starter code and the game's source code are not included in this repository. This page covers the game itself and my part in making it.
-
 ## About the game
 
 The game is played by typing commands into a graphical window that shows your current location, the events of each turn, and a turn counter. The market is made up of stalls, each with its own vendors, items, and requests. Progress depends on exploring carefully, managing your inventory, and helping vendors by giving them items or making the right dialogue choices.
