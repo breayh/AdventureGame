@@ -44,7 +44,3 @@ This was a two-person project with split responsibilities.
 - Language: Scala 3
 - Build tool: sbt
 - Interface: Scala Swing GUI
-
-## Repository contents
-
-- `photos/`: screenshots and visuals from the game
